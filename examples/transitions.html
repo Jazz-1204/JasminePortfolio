@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transition Examples</title>
+    <style>
+      #transition1 {
+        transition: color 1s;
+      }
+      #transition1:hover {
+        color: red;
+      }
+
+      #transition2 {
+        transition-property: transform;
+        transition-duration: 2s;
+        transtion-timing-function: linear;
+        transition-delay: 1s;
+        tranform-origin: left;
+      }
+      #transition2:hover {
+        transform: scale(5);
+      }
+
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        transition:
+        borfer-radius 2s ease-in,
+        backgroun-color 2s;
+      }
+      #box:hover {
+        background-color: yellow;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">This is a basic transition</h1>
+
+    <h2 id="transition2">This is a basic transition</h2>
+    <div id="box"></div>
+  </body>
+</html>

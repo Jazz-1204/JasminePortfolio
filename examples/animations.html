@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation Examples</title>
+    <style>
+@keyframes toPink {
+  0% {
+    color: cyan;
+  }
+  50% {
+    color: pink;
+    transform: scale(2)
+  }
+  100% {
+    color: cyan;
+  }
+}
+
+#animation1 {
+  animation: toPink 1s infinite;
+}
+      </style>
+  </head>
+  <body>
+    <h1 id="animation1">This is a basic animation.</h1>
+  </body>
+</html>
