@@ -6,7 +6,7 @@
   <style>
 
 .background{
-  background-image: url("../images/granite-bkg.jpg")
+    background-color: hsl(136, 0%, 90%)
 }
 
     .grid {
@@ -28,7 +28,7 @@
 
     .content {
       grid-area: content;
-      padding: 10px;
+      padding: 5px;
       display:;
     }
         .center {
@@ -50,16 +50,21 @@
         }
 
         @media screen and (min-width: 200px) and (max-width: 799px) {
-
-
           h3 {
             display: flex;
           }
           body{
             display: flex;
           }
-        head {
-          display: flex;
+        head, header {
+          flex-wrap: wrap;
+        }
+          content{
+            display: flex;
+          }
+          style{
+            display: flex;
+          }
         }
   </style>
 
