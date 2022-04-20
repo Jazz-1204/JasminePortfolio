@@ -6,16 +6,19 @@
 
 <style>
 
-@media screen and (min-width: 200px) and (max-width: 480px)
-{
-body {
-  display: flex;
-}
-h1, h3, h4 {
-  display: flex;
-}
-  }
 
+        @media screen and (min-width: 200px) and (max-width: 480px){
+
+          h1, h3, h4, nav, body {
+            display: inline-flex;
+          }
+          box {
+            display: inline-flex;
+          }
+          art-column{
+            display: flex;
+          }
+        }
 * {
 box-sizing: border-box:
 }
@@ -42,13 +45,6 @@ box-sizing: border-box:
 }
 
 .box {
-  background-color: hsl(319, 100%, 99%);
-  width: 1035px;
-  border: 5px solid pink;
-  padding: 10px;
-}
-
-.box2 {
   background-color: hsl(319, 100%, 99%);
   width: 1035px;
   border: 5px solid pink;
@@ -91,19 +87,19 @@ box-sizing: border-box:
       </div>
 
 
-    <div class="box">
-
+    <div class="box"
+  </nav>
 
 <div class="art-column">
   <div class="one"><img style="height:200px"src="../images/untitled-14.png" alt=""></div>
-    <div class="two"><img style="height:275px"src="../images/untitled 9.png" alt=""></div>
+    <div class="two"><img style="height:275px"src="../images/untitled9.png" alt=""></div>
     <div class="three"><img style="height:255px"src="../images/Twilight_RedesignB.png" alt=""></div>
-    <div class="four"><img style="height:210px"src="../images/untitled 11.png" alt=""></div>
-    <div class="five"><img style="height:210px"src="../images/untitled 6.png" alt=""></div>
-    <div class="six"><img style="height:210px"src="../images/untitled 1.png" alt=""></div>
-    <div class="seven"><img style="height:250px"src="../images/untitled 8.png" alt=""></div>
-    <div class="eight"><img style="height:250px"src="../images/untitled 13.png" alt=""></div>
-    <div class="nine"><img style="height:250px"src="../images/untitled 4.png" alt=""></div>
+    <div class="four"><img style="height:210px"src="../images/untitled11.png" alt=""></div>
+    <div class="five"><img style="height:210px"src="../images/untitled6.png" alt=""></div>
+    <div class="six"><img style="height:210px"src="../images/untitled1.png" alt=""></div>
+    <div class="seven"><img style="height:250px"src="../images/untitled8.png" alt=""></div>
+    <div class="eight"><img style="height:250px"src="../images/untitled13.png" alt=""></div>
+    <div class="nine"><img style="height:250px"src="../images/untitled4.png" alt=""></div>
 
   </div>
 </div>
@@ -137,8 +133,6 @@ box-sizing: border-box:
 
     <script type="text/javascript" src="../js/portfolioSlideshoe.js"></script>
 </div>
-
-<div class="box2">
 
 </body>
 <body style="background-color: hsl(162, 100%, 90%)""/>
