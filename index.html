@@ -1,68 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head><title>Home</title>
-  <body style="background-color: hsl(170, 100%, 89%)""/>
+<html lang="en-US">
 
-  <header>
-  <div class="header-background"></div>
-  </header>
+<head>
+
 
 <style>
-.header-background {
-width: 100%;
-height: 100px;
-background:url("images/background.jpg");
+
+* {
+box-sizing: border-box:
 }
-</style>
-<body>
 
-
-<div class="center">
-<h1>Jasmine's Portfolio</h1>
-</div>
-
-<style>
-.border {
-border: 10px groove purple;
-}
-</style>
-
-<style>
-  .center {
-text-align: center;
+  nav,
+  .navLink {
+    background-color: pink;
   }
-</style>
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
 
+.center {
+  text-align: center;
+  align-content: center;
+}
+
+.art-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.box {
+  background-color: hsl(319, 100%, 99%);
+  width: 1035px;
+  border: 5px solid pink;
+  padding: 10px;
+}
+
+  #slideshow {
+    height: 350px;
+    text-align: center;
+  }
+
+  .slideshowImage {
+    width: 350px;
+    text-align: center;
+  }
+
+  #center2 {
+    text-align: center;
+  }
+}
+
+</style>
+</head>
 <div class="center">
 
-<dl style="padding-left:0px">
-  <div class="border">
+<h1>Jasmine's Portfolio</h1>
+
+<body>
+  <h3>
+
+    <dl style="padding:15px">
+    <div class="navLink">
+          <li style="display:inline">Home
+          <li style="display:inline">Gallery
+          <li style="display:inline">Commission Me
+          <li style="display:inline">About Me
+          <li style="display:inline">Contact Me
+            </nav>
+          </h3>
+      </div>
 
 
-  <li><a href="../Portfolio/PortfolioLandingPage.html">Home</a> </li>
-  <li style="display:inline"><a href="../images/Twilight_RedesignB.png">Gallery</a></li>
-  <li style="display:inline"><a href="../index.html">Commission Me</a></li>
-  <li style="display:inline"><a href="../index.html">About Me</a></li>
-  <li style="display:inline"><a href="../index.html">Contact Me</a></li>
-</dl>
+    <div class="box"
+  </nav>
 
+<div class="art-column">
+  <div class="one"><img style="height:200px"src="../images/untitled-14.png" alt=""></div>
+    <div class="two"><img style="height:275px"src="../images/untitled 9.png" alt=""></div>
+    <div class="three"><img style="height:255px"src="../images/Twilight_RedesignB.png" alt=""></div>
+    <div class="four"><img style="height:210px"src="../images/untitled 11.png" alt=""></div>
+    <div class="five"><img style="height:210px"src="../images/untitled 6.png" alt=""></div>
+    <div class="six"><img style="height:210px"src="../images/untitled 1.png" alt=""></div>
+    <div class="seven"><img style="height:250px"src="../images/untitled 8.png" alt=""></div>
+    <div class="eight"><img style="height:250px"src="../images/untitled 13.png" alt=""></div>
+    <div class="nine"><img style="height:250px"src="../images/untitled 4.png" alt=""></div>
+
+  </div>
 </div>
+<br>
 
-</body> <p>
-  <hr>
+<div id="center2">
 
-<div class="transition">
-  <img style="height:175px"src="images/untitled-14.png" alt="">
-  <img style="height:175px"src="images/untitled 9.png" alt="">
+<h4>An experienced individual in Custom Apparel design, Character Design, and Logo Design</h4>
 
-  <hr>
-  <img style="height:175px"src="images/Twilight_RedesignB.png" alt="">
-  <img style="height:175px"src="images/untitled 11.png" alt="">
-  <hr>
+<div id="slideshow">
+  <img id="slide1" class="slideshowImage" src="../images/cyot.jpeg"/>
+  <img id="slide2" class="slideshowImage" src="../images/character-design-intro_900x506.jpeg"/>
+  <img id="slide3" class="slideshowImage" src="../images/Expert-Custom-Logo-Designer.png"/>
 
-  <img style="height:175px"src="images/untitled 2.png"alt="">
+  </div>
 
-  <img style="height:175px"src="images/zenspriteanimationaf.gif"alt="">
 
+<br><br><br>
+  <input
+    type="button"
+    id="previous"
+    value="<-"
+    onclick="showPreviousSlide()"
+  >
+  <input
+    type="button"
+    id="next"
+    value="->"
+    onclick="showNextSlide()"
+  >
+
+    <script type="text/javascript" src="../js/portfolioSlideshoe.js"></script>
+</div>
 
 </body>
+<body style="background-color: hsl(162, 100%, 90%)""/>
+
+
+</html>
