@@ -20,7 +20,7 @@
         "nav nav nav"
         "header header header"
         "bannerItem1 bannerItem2 bannerItem3"
-        "blog blog storefront"
+        "blogPost blogPost shopGrid"
         "footer footerSocialMedia footerSocialMedia"
         "copyright copyright copyright"
     }
@@ -72,10 +72,10 @@
       grid-area: bannerItem3;
     }
 
-    .blog {
+    .blogPost {
       display: flex;
-      padding: 10px;
-      grid-area: blog;
+      padding: 20px;
+      grid-area: blogPost;
     }
 
     .footer {
@@ -95,7 +95,7 @@
     .storefront {
       display: flex;
       padding: 10px;
-      grid-area: storefront;
+      grid-area: shopGrid;
     }
 
     .copyright {
@@ -228,10 +228,10 @@
       <!-- Storefront section of the grid -->
       <div class="storefront">
         <h2>Add some GREEN into your life from our online store</h2>
-        <div id="shopGrid">
+        <div class="shopGrid">
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt1" src="images/tshirt.png" />
+            <img style="height:200px" class="shopItemImage" alt="tshirt1" src="images/tshirt.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -246,7 +246,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt2" src="images/tshirt2.png" />
+            <img style="height:200px" class="shopItemImage" alt="tshirt2" src="images/tshirt2.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -261,7 +261,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt3" src="images/tshirt3.png" />
+            <img style="height:200px" class="shopItemImage" alt="tshirt3" src="images/tshirt3.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -276,7 +276,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt4" src="images/tshirt.png" />
+            <img style="height:200px" class="shopItemImage" alt="tshirt4" src="images/tshirt.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -291,7 +291,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="mug1" src="images/mug.png" />
+            <img style="height:200px" class="shopItemImage" alt="mug1" src="images/mug.png" />
             <div class="shopItemBadge">COFFEE MUG</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -306,7 +306,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="mug2" src="images/mug2.jpg" />
+            <img style="height:200px" class="shopItemImage" alt="mug2" src="images/mug2.jpg" />
             <div class="shopItemBadge">COFFEE MUG</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -321,7 +321,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="seeds1" src="images/seeds.jpg" />
+            <img style="height:200px" class="shopItemImage" alt="seeds1" src="images/seeds.jpg" />
             <div class="shopItemBadge">SEEDS</div>
             <form class="shopItemSelection">
               <select name="quantity">
@@ -336,7 +336,7 @@
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="seeds2" src="images/seeds2.jpg" />
+            <img style="height:200px" class="shopItemImage" alt="seeds2" src="images/seeds2.jpg" />
             <div class="shopItemBadge">SEEDS</div>
             <form class="shopItemSelection">
               <select name="quantity">
