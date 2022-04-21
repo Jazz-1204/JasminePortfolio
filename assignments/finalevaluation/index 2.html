@@ -4,7 +4,7 @@
     <title>Green Foundation</title>
     <style>
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
 
     #background {
       background-color: hsl(142, 100%, 93%)
@@ -20,12 +20,15 @@
         "nav nav nav"
         "header header header"
         "bannerItem1 bannerItem2 bannerItem3"
-        "storefront storefront storefront"
-        "blog blog blog"
+        "blog blog storefront"
         "footer footerSocialMedia footerSocialMedia"
         "copyright copyright copyright"
     }
 
+    h2 {
+      display: flex;
+      color: hsl(142, 40%, 46%);
+    }
     .nav {
         background-color: hsl(142, 40%, 46%);
         display: flex;
@@ -42,24 +45,28 @@
       list-style: none;
     }
     .header {
+      background-image: url(images/seeds.jpg);
       display: flex;
       padding: 10px;
       grid-area: header;
     }
 
     .bannerItem1 {
+      background-color: hsl(142, 40%, 46%);
       display: flex;
       padding: 10px;
       grid-area: bannerItem1;
     }
 
     .bannerItem2 {
+      background-color: hsl(142, 40%, 46%);
       display: flex;
       padding: 10px;
       grid-area: bannerItem2;
     }
 
     .bannerItem3 {
+      background-color: hsl(142, 40%, 46%);
       display: flex;
       padding: 10px;
       grid-area: bannerItem3;
@@ -154,10 +161,10 @@
 
       <!-- Hero section of the grid -->
       <div class="header">
-        <div class="eyebrow">Planting the Seeds of the Future</div>
+        <div class="eyebrow">'Planting the Seeds of the Future'</div>
         <h1 class="heroHeading">
-          Poverty and environmental degradation are intrinsically linked. By
-          healing the environment, we can heal lives as well.
+          "Poverty and environmental degradation are intrinsically linked. By
+          healing the environment, we can heal lives as well.""
         </h1>
         <form>
           <label for="email">Your e-mail here</label>
@@ -202,15 +209,15 @@
         <div class="bannerActions">
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/twitter.png" alt="twitter" />
+          <img src="images/twitter.png" alt="twitter">
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/facebook.png" alt="facebook" />
+            <img src="images/facebook.png" alt="facebook">
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/instagram.png" alt="instagram" />
+            <img src="images/instagram.png" alt="instagram">
           </a>
         </div>
       </div>
@@ -224,74 +231,92 @@
         <div id="shopGrid">
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt1" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt1" src="images/tshirt.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt2" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt2" src="images/tshirt2.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt3" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt3" src="images/tshirt3.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt4" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt4" src="images/tshirt.png" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="mug1" src="images/mug.jpg" />
+            <img class="shopItemImage" alt="mug1" src="images/mug.png" />
             <div class="shopItemBadge">COFFEE MUG</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="mug2" src="images/mug.jpg" />
+            <img class="shopItemImage" alt="mug2" src="images/mug2.jpg" />
             <div class="shopItemBadge">COFFEE MUG</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
@@ -300,22 +325,28 @@
             <div class="shopItemBadge">SEEDS</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="seeds2" src="images/seeds.jpg" />
+            <img class="shopItemImage" alt="seeds2" src="images/seeds2.jpg" />
             <div class="shopItemBadge">SEEDS</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Buy">
             </form>
           </div>
         </div>
@@ -329,7 +360,7 @@
         <h2>Check out our latest blog posts</h2>
         <div class="blogPost">
           <!-- TODO: fix image src -->
-          <img src="images/sapling.jpg" class="blogPostImage" alt="happy plants" />
+          <img style="height:200px" src="images/sapling.png" class="blogPostImage" alt="happy plants" />
           <div class="blogPostPreview">
             <h3 class="blogPostPreviewTitle">
               Will talking to plants help them grow?
@@ -357,7 +388,7 @@
             <a href="#">Keep reading</a>
           </div>
           <!-- TODO: fix image src -->
-          <img src="images/field.jpg" class="blogPostImage" alt="happy people" />
+          <img style="width:200px" src="images/field.jpg" class="blogPostImage" alt="happy people" />
         </div>
       </div>
 
@@ -402,15 +433,15 @@
         <div>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="../images/twitter.png" alt="twitter" />
+            <img src="images/twitter.png" alt="twitter" />
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="../images/facebook.png" alt="facebook" />
+            <img src="images/facebook.png" alt="facebook" />
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="../images/instagram.png" alt="instagram" />
+            <img src="images/instagram.png" alt="instagram" />
           </a>
         </div>
       </div>
