@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<head>
+  <title>Grids</title>
+  <style>
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(50px, auto);
+      grid-template-areas:
+          "header header header"
+          "content content nav";
+    }
+    .header {
+      background-color: pink;
+      padding: 20px;
+      grid-area: header;
+    }
+
+    .nav {
+      background-color: hsl(14, 100%, 82%);
+      grid-area: nav;
+      padding: 20px;
+    }
+    ul {
+      list-style: none;
+    }
+    .content {
+      grid-area: content;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
 <div class="header">
-  <h1>Assignment 13 Grids</h1>
+  <h1>Assignment 13 Grids!</h1>
 </div>
 
-<div class="navbar">
+<div class="nav">
   <ul>
     <li> Blog</li>
     <li>Videos</li>
@@ -13,3 +47,20 @@
     <li>Random!!!</li>
   </ul>
 </div>
+
+  <div class="content">
+    <div>
+      This is the content section. It will be full of nonsense!!
+      Cillum instituendarum commodo aute laboris, veniam ingeniis
+          familiaritatem.
+          Sint non proident e deserunt consectetur hic
+          vidisse.
+          Ea duis senserit deserunt.Cernantur anim
+          expetendis, consequat quem ullamco, occaecat ea multos
+          eiusmod eu veniam laboris o iudicem.
+          Deserunt tempor dolore
+    </div>
+</div>
+</div>
+</body>
+</html>
