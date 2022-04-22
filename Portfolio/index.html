@@ -19,6 +19,13 @@
             display: flex;
           }
         }
+  #transition {
+    transition: color 2s;
+        }
+
+  #transition:hover {
+    color: pink;
+        }
 * {
 box-sizing: border-box:
 }
@@ -27,9 +34,14 @@ box-sizing: border-box:
   .navLink {
     background-color: pink;
   }
+
   nav {
     display: flex;
     flex-direction: row;
+  }
+
+  .mainLink:hover {
+    background-color: hsl(326, 38%, 49%);
   }
 
 .center {
@@ -46,6 +58,13 @@ box-sizing: border-box:
 
 .box {
   background-color: hsl(319, 100%, 99%);
+  width: 1035px;
+  border: 5px solid pink;
+  padding: 10px;
+}
+
+.box2 {
+  background-image: url(../images/splatter.jpg);
   width: 1035px;
   border: 5px solid pink;
   padding: 10px;
@@ -70,24 +89,26 @@ box-sizing: border-box:
 </head>
 <div class="center">
 
-<h1>Jasmine's Portfolio</h1>
+<h1 id="transition">Jasmine's Portfolio</h1>
 
 <body>
   <h3>
 
     <dl style="padding:15px">
     <div class="navLink">
-          <li style="display:inline">Home
-          <li style="display:inline">Gallery
-          <li style="display:inline">Commission Me
-          <li style="display:inline">About Me
-          <li style="display:inline">Contact Me
+        <div class="navLink hoverDropdown">
+          <li style="display:inline"<div class="mainLink">Home
+          <li style="display:inline"<div class="mainLink">Gallery
+          <li style="display:inline"<div class="mainLink">Commission Me
+          <li style="display:inline"<div class="mainLink">About Me
+          <li style="display:inline"<div class="mainLink">Contact Me
             </nav>
           </h3>
       </div>
+</div>
+</div>
 
-
-    <div class="box"
+    <div class="box">
   </nav>
 
 <div class="art-column">
@@ -131,7 +152,34 @@ box-sizing: border-box:
     onclick="showNextSlide()"
   >
 
-    <script type="text/javascript" src="../js/portfolioSlideshoe.js"></script>
+<div class="box2">
+  <div class="contactMe">
+<h3>Contact Me
+  <br><br>
+    <form>
+      <label for="email">Your E-mail:</label>
+      <input type="text" id="email">
+
+      <label for="number">Your number:</label>
+      <input type="" id="number">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <img src="" alt="">
+  </h3>
+  </div>
+</div>
+
+    <script type="text/javascript" src="../js/portfolioSlideshoe.js">
+
+    $('.hoverDropdown').hover(
+    function() {
+      $(this).addClass('dropdownOpen');
+    }
+    function() {
+      $(this).removeClass('dropdownOpen');
+    }
+    </script>
 </div>
 
 </body>
